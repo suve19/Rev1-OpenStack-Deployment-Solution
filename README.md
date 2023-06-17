@@ -3,7 +3,7 @@ Rev1 OpenStack Deployment Solution
 This repository contains Python scripts to deploy and operate the Rev1 service within an OpenStack environment. The solution consists of the following files:
 
 - `install.py`: This Python script installs all the required packages and dependencies for the project.
-- `deploy.py`: This script deploys and operates the service within the OpenStack environment by creating the required network(s), router(s), nodes, and other required items.
+- `operate.py`: This script deploys and operates the service within the OpenStack environment by creating the required network(s), router(s), nodes, and other required items.
 - `cleanup.py`: This script releases and removes all allocated cloud resources once the operation and monitoring of the system are complete.
 - `requirements.txt`: This file lists all the required Python packages and libraries required for the project.
 
@@ -31,12 +31,12 @@ This will install all the required packages and dependencies for the project.
 
 4. Update the `openrc` file with your OpenStack authentication details.
 
-## Deployment
+## Operate
 
 To deploy the solution, run the following command:
 
 ```bash
-python3 deploy.py
+python3 operate.py
 ```
 
 This will create the required network(s), router(s), nodes, and other required items to deploy the Rev1 service within the OpenStack environment.
